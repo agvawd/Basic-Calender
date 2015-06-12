@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="calendarApp" class="ng-scope">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body ng-controller="calendarCtrl">
+
+	<calendar selected="day" class="ng-isolate-scope"></calendar>
+	<span>Selected date: <b>{{day.format('dddd, MMMM Do YYYY')}}</b></label></span>
+	<input type="text" ng-model="task"></input>
+
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
